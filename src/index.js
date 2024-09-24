@@ -15,22 +15,12 @@ console.log(chalk.white.bgGreen.bold(` A area da parede e: ${resultado}`));
 //-------------------------------------------------------------------------------------------------
 
 // Desafio 2
-
-// Imagine que você está desenvolvendo um sistema de cadastro para uma empresa.
-// Quando um usuário se cadastra, ele insere seu nome e sobrenome em campos separados.
-// Você precisa juntar essas duas informações para formar o nome completo do
-// usuário e exibir uma mensagem de boas-vindas.
-
 // Nome e sobrenome inseridos pelo usuário
-var nome = "João";
-var sobrenome = "Silva";
 
-// Juntando os nomes com a mensagem de boas-vindas
-  
-       //seu código
+var nome = readlineSync.question(chalk.bgRed.bold(' Qual e o seu primeiro nome ? '));
+var sobrenome = readlineSync.question(chalk.bgRed.bold(' Qual e o seu sobrenome ? '));
 
-// Exibindo a mensagem no console
-console.log();
+console.log(chalk.white.bgGreen.bold(` Ola ${nome} ${sobrenome}. Bem vindo ao nosso sistema! `));
 
 
 //-------------------------------------------------------------------------------------------------
