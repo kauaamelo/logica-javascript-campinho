@@ -22,30 +22,19 @@ var sobrenome = readlineSync.question(chalk.bgRed.bold(' Qual e o seu sobrenome 
 
 console.log(chalk.white.bgGreen.bold(` Ola ${nome} ${sobrenome}. Bem vindo ao nosso sistema! `));
 
-
 //-------------------------------------------------------------------------------------------------
-
 
 //Desafio 3
-
-// Você está trabalhando no departamento de recursos humanos de uma empresa, e precisa
-// calcular quantos dias um funcionário já viveu até agora, com base na idade informada.
-// O funcionário informa sua idade em anos, e você deve converter esse valor para dias,
-// considerando que todos os anos têm 365 dias.
-
 // Idade do funcionário em anos
-var idadeEmAnos = 30;
-
-// Calculando anos em dias
   
-      //seu código
+var idadeAtual = readlineSync.question(chalk.bgRed.bold(' Qual e sua idade atual ? '));
+var diasEmAnos = 365
 
+var diasConvertidos = idadeAtual * diasEmAnos;
 
-// Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log(chalk.white.bgGreen.bold(` Voce possui ${diasConvertidos} dias de vida. `));
 
 //-------------------------------------------------------------------------------------------------
-
 
 // Desafio 4
 
