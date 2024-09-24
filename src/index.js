@@ -1,19 +1,16 @@
+import chalk from 'chalk';
+import readlineSync from 'readline-sync';
+
 // Desafio 1
-//Você foi chamado para ajudar a pintar uma parede em uma casa.
-// A parede tem formato retangular, e você precisa saber quantos metros quadrados de tinta serão necessários para cobri-la. Para isso, você deve calcular a área da parede.
-// A parede tem 4 metros de altura e 5 metros de largura.
-
-//Para calcular a área de um retângulo, usamos a seguinte fórmula:
-// area = largura * altura;
-
 // Dimensões da parede (largura e altura em metros)
-var largura = 5;
-var altura = 4;
 
-// Calculando a área da parede
+var largura = readlineSync.question(chalk.bgRed.bold(' Qual e a largura da parede? '));
+var altura = readlineSync.question(chalk.bgRed.bold(' Qual e a altura da parede? '));
 
-// Exibindo o resultado no console
-console.log("A área da parede é:");
+var resultado = parseFloat;
+resultado = largura * altura;
+
+console.log(chalk.white.bgGreen.bold(` A area da parede e: ${resultado}`));
 
 //-------------------------------------------------------------------------------------------------
 
