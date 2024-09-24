@@ -37,19 +37,12 @@ console.log(chalk.white.bgGreen.bold(` Voce possui ${diasConvertidos} dias de vi
 //-------------------------------------------------------------------------------------------------
 
 // Desafio 4
-
-// Você trabalha em uma empresa de eventos, e foi solicitado a calcular quanto tempo
-// um evento durou. Você recebeu o total de minutos que o evento durou, mas precisa
-// converter esse valor em horas e minutos para gerar um relatório. Por exemplo,
-//  se o evento durou 135 minutos, você deve dizer que ele durou 2 horas e 15 minutos.
-
 // Duração total do evento em minutos
-var duracaoEmMinutos = 135;
-
 // Calculando horas e minutos
   
-      //seu código
+var duracaoEmMinutos = readlineSync.question(chalk.bgRed.bold(' Quantos minutos durou o evento ? '));
 
+var horasConvertidas = Math.floor(duracaoEmMinutos / 60);
+var minutosConvertidos = duracaoEmMinutos % 60;
 
-// Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log(chalk.white.bgGreen.bold(` O evento durou ${horasConvertidas} horas e ${minutosConvertidos} minutos. `));
