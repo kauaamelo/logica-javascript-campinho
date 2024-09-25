@@ -1,72 +1,60 @@
-## Instruções
+# Desafios com Node.js e JavaScript
 
-1. Fork do Repositório
-   - Um "fork" é uma cópia de um repositório que fica no seu perfil GitHub. Você faz um fork para ter uma versão própria do projeto na qual você pode trabalhar. Isso permite que você modifique e experimente o código sem afetar o repositório original.
+![image](https://github.com/user-attachments/assets/a3ee3564-cb61-4160-aa82-6a3118d7b92b)
 
-     
-#### Como forkar?
+Este projeto contém quatro desafios simples em Node.js usando JavaScript para interações no terminal. A aplicação utiliza os pacotes `chalk` para estilizar as saídas no terminal e `readline-sync` para capturar as entradas do usuário. 
 
-Faça o fork desse repo: [https://github.com/campinho-digital/Como-fazer-um-Fork](https://github.com/campinho-digital/Como-fazer-um-Fork)  
+## Funcionalidades
 
+### Desafio 1: Cálculo da Área da Parede
+Este desafio solicita ao usuário as dimensões (largura e altura) de uma parede em metros e calcula a área total.
 
-2. Após o Fork
+- **Entrada:** Largura e altura da parede.
+- **Saída:** Área total da parede.
 
-- Clonar o Repositório Forkado
+### Desafio 2: Nome Completo
+O usuário insere seu nome e sobrenome, e o sistema exibe uma mensagem personalizada de boas-vindas.
+
+- **Entrada:** Nome e sobrenome.
+- **Saída:** Mensagem de boas-vindas com o nome completo.
+
+### Desafio 3: Cálculo da Idade em Dias
+Este desafio pede a idade do usuário em anos e converte essa idade para dias de vida (considerando 365 dias por ano).
+
+- **Entrada:** Idade em anos.
+- **Saída:** Quantidade de dias de vida.
+
+### Desafio 4: Duração do Evento
+Dado um valor em minutos, o sistema calcula a duração de um evento em horas e minutos.
+
+- **Entrada:** Duração do evento em minutos.
+- **Saída:** Duração convertida em horas e minutos.
+
+## Tecnologias Utilizadas
+
+- **Node.js** - Runtime JavaScript para executar código fora do navegador.
+- **Chalk** - Biblioteca para estilizar a saída no terminal.
+- **readline-sync** - Biblioteca para capturar inputs do usuário via terminal.
+
+## Como Executar o Projeto
+
+### Pré-requisitos
+
+- Ter o **Node.js** instalado em sua máquina.
   
-Abra o terminal ou o Git Bash em seu computador.
+### Instalação
 
+1. Clone o repositório:
 
-### Clone o repositório forkado para o seu computador com o seguinte comando:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
 
-~~~javascript
-git clone seu_repositorio
-~~~
+2. Instale as dependências pelo terminal:
 
+   ```bash
+   npm install chalk readline-sync
 
-### Navegue até a pasta do repositório clonado:
+3. Rodar o projeto no terminal:
 
-~~~javascript
-cd seu_repositorio
-~~~
-
-#### ⚠️ Atenção 
-
-Quando você clona um repositório, o Git cria uma nova pasta no seu sistema contendo todos os arquivos e a estrutura do projeto. Para trabalhar com esse projeto (editar arquivos, rodar scripts, instalar dependências, etc.), você precisa estar dentro dessa pasta. Se não navegar para essa pasta, você estará em uma localização diferente no seu sistema e os comandos que tentar rodar (como npm install ou git) não funcionarão corretamente, pois eles precisam ser executados no diretório correto.
-
-
-3. Instalar Dependências
-Se o projeto utiliza npm, você deve instalar as dependências:
-
-~~~javascript
-npm install
-
-~~~
-
-#### ⚠️ Atenção 
-Se o projeto utiliza o Node.js e tem um arquivo package.json, você precisa rodar npm install para instalar todas as bibliotecas e dependências que o projeto necessita para funcionar. Sem isso, o projeto pode não rodar corretamente.
-
-4. Abrir o Arquivo index.js
-Abra seu editor de código preferido (por exemplo, Visual Studio Code).
-No editor, abra o arquivo `index.js` que está no repositório.
-
-- Cada participante deverá responder individualmente às questões propostas no arquivo `index.js`
-- Lembre-se de sempre comentar o código respondido para explicar o que está sendo feito.
-- Para cada questão, remova o comentário do console.log() relacionado àquela questão. Isso ajudará a testar e debugar o código.
-
-
-5. Testar o Projeto
-Use o comando `npm start` no terminal para executar o projeto e testar as respostas que você implementou no arquivo index.js.
-
-~~~javascript
-npm start
-~~~
-
-O código será executado, e você poderá ver a saída do `console.log` no terminal.
-
-6. Versionamento com Git
-Depois de responder às questões e adicionar comentários ao código, você precisa versionar essas alterações usando o Git.
-
-7. Enviar o Repositório para o Moodle
-
-Você deve enviar o link do repositório com as questões respondidas para o Moodle, para que o instrutor possa revisar o seu trabalho. O link do GitHub facilita o acesso ao código e também permite que o instrutor veja todo o histórico de commits (versões anteriores do código), o que é útil para acompanhar seu progresso.
-
+      ```bash
+      npm start
